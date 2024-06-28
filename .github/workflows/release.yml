@@ -19,8 +19,8 @@ jobs:
         pip install setuptools wheel twine
     - name: Build and publish
       env:
-        TWINE_USERNAME: ${{ secrets.NinjaLoop }}
-        TWINE_PASSWORD: ${{ secrets.PiratesAhoy1! }}
+        TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+        TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
       run: |
         make release
 
@@ -29,7 +29,3 @@ jobs:
         pip install -r requirements-docs.txt
         pip install -e .
         mkdocs gh-deploy --force
-
-
-
-
