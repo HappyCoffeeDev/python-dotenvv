@@ -100,7 +100,7 @@ config = {
 
 ### Parse configuration as a stream
 
-`load_dotenv` and `dotenv_values` accept [streams][python_streams] via their `stream`
+`load_dotenv` and `dotenv_values` accept [streams][python_streams] viaa their `stream`
 argument.  It is thus possible to load the variables from sources other than the
 filesystem (e.g. the network).
 
